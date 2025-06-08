@@ -32,6 +32,10 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "JAR Application.safelink.jar.executor": "Debug",
+    "Maven.safelink [clean].executor": "Run",
+    "Maven.safelink [compile].executor": "Run",
+    "Maven.safelink [install].executor": "Run",
+    "Maven.safelink [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -98,6 +102,7 @@
       <workItem from="1749167231234" duration="8098000" />
       <workItem from="1749311278920" duration="1624000" />
       <workItem from="1749327180423" duration="17924000" />
+      <workItem from="1749346722764" duration="6021000" />
     </task>
     <servers />
   </component>

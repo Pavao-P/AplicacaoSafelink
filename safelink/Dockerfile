@@ -1,9 +1,9 @@
 FROM openjdk:17-jdk-slim
-RUN useradd -ms /bin/bash safelinkuser
-WORKDIR /home/safelinkuser/app
-COPY out/artifacts/safelink_jar/safelink.jar app.jar
-RUN chown -R safelinkuser:safelinkuser /home/safelinkuser/app
-USER safelinkuser
-ENV PORT=8080
+ENV SPRING_PROFILES_ACTIVE=prod
+RUN useradd -m springuser
+WORKDIR /app
+COPY target/*.jar app.jar
+RUN chown -R springuser:springuser /app
+USER springuser
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

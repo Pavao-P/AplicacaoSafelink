@@ -1,0 +1,5 @@
+com\fiap\safelink\model\Abrigo.class
+com\fiap\safelink\controller\AbrigoController.class
+com\fiap\safelink\repository\AbrigoRepository.class
+com\fiap\safelink\controller\HelloController.class
+com\fiap\safelink\SafeLinkApplication.class
